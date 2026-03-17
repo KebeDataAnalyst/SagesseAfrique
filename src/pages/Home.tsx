@@ -42,7 +42,7 @@ export default function Home() {
       <section style={styles.hero}>
         <h1 style={styles.heroTitle}>Sagesse d'Afrique Internationale</h1>
         <p style={styles.heroSubtitle}>
-          Découvrez la richesse culturelle, historique et intellectuelle de l'Afrique
+          Découvrez la richesse culturelle, historique et intellectuelle de l'Afrique.
         </p>
       </section>
 
