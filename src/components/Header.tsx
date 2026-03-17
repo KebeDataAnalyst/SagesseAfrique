@@ -19,6 +19,11 @@ export default function Header() {
       <div style={styles.container}>
         <div style={styles.content}>
           <Link to="/" style={styles.logo}>
+            <img
+              src="/assets/images/logo_afri.jpeg"
+              alt="Sagesse d'Afrique"
+              style={styles.logoImage}
+            />
             <span style={styles.logoText}>Sagesse d'Afrique</span>
           </Link>
 
@@ -90,7 +95,13 @@ const styles: Record<string, React.CSSProperties> = {
   logo: {
     display: 'flex',
     alignItems: 'center',
-    gap: '0.5rem',
+    gap: '0.75rem',
+    textDecoration: 'none',
+  },
+  logoImage: {
+    height: '40px',
+    width: 'auto',
+    borderRadius: '4px',
   },
   logoText: {
     fontSize: '1.25rem',
