@@ -99,9 +99,11 @@ const styles: Record<string, React.CSSProperties> = {
     textDecoration: 'none',
   },
   logoImage: {
-    height: '40px',
+    height: '50px',
     width: 'auto',
-    borderRadius: '4px',
+    borderRadius: '6px',
+    objectFit: 'contain',
+    boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
   },
   logoText: {
     fontSize: '1.25rem',
