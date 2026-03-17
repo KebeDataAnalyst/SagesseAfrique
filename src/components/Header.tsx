@@ -24,7 +24,6 @@ export default function Header() {
               alt="Sagesse d'Afrique"
               style={styles.logoImage}
             />
-            <span style={styles.logoText}>Sagesse d'Afrique</span>
           </Link>
 
           <nav style={styles.desktopNav}>
