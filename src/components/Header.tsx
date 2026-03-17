@@ -20,7 +20,7 @@ export default function Header() {
         <div style={styles.content}>
           <Link to="/" style={styles.logo}>
             <img
-              src="/assets/images/logo_afri.jpeg"
+              src="/logo_afri.jpeg"
               alt="Sagesse d'Afrique"
               style={styles.logoImage}
             />
