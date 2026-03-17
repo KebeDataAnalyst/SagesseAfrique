@@ -22,17 +22,19 @@ const styles: Record<string, React.CSSProperties> = {
   container: {
     maxWidth: '1280px',
     margin: '0 auto',
-    padding: '2rem 1rem',
+    padding: '1.5rem 1rem',
     textAlign: 'center',
   },
   text: {
-    fontSize: '0.875rem',
+    fontSize: '0.85rem',
     fontWeight: 600,
     color: 'var(--text-primary)',
     marginBottom: '0.5rem',
+    lineHeight: 1.4,
   },
   subtitle: {
     fontSize: '0.75rem',
     color: 'var(--text-secondary)',
+    lineHeight: 1.4,
   },
 };

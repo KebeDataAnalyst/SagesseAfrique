@@ -24,10 +24,10 @@ export default function Header() {
               alt="Sagesse d'Afrique"
               style={styles.logoImage}
             />
-            <span style={styles.logoText}>Sagesse d'Afrique</span>
+            <span style={styles.logoText} className="logo-text">Sagesse d'Afrique</span>
           </Link>
 
-          <nav style={styles.desktopNav}>
+          <nav style={styles.desktopNav} className="desktop-nav">
             {navigation.map((item) => (
               <Link
                 key={item.path}
@@ -44,6 +44,7 @@ export default function Header() {
 
           <button
             style={styles.mobileMenuButton}
+            className="mobile-menu-button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -95,23 +96,24 @@ const styles: Record<string, React.CSSProperties> = {
   logo: {
     display: 'flex',
     alignItems: 'center',
-    gap: '0.75rem',
+    gap: '0.5rem',
     textDecoration: 'none',
   },
   logoImage: {
-    height: '50px',
+    height: '40px',
     width: 'auto',
     borderRadius: '6px',
     objectFit: 'contain',
     boxShadow: '0 2px 4px rgba(0, 0, 0, 0.1)',
   },
   logoText: {
-    fontSize: '1.25rem',
+    fontSize: '1rem',
     fontWeight: 700,
     color: 'var(--primary)',
+    display: 'none',
   },
   desktopNav: {
-    display: 'flex',
+    display: 'none',
     gap: '2rem',
   },
   navLink: {
@@ -129,6 +131,7 @@ const styles: Record<string, React.CSSProperties> = {
     border: 'none',
     color: 'var(--text-primary)',
     padding: '0.5rem',
+    cursor: 'pointer',
   },
   mobileNav: {
     display: 'flex',
@@ -143,6 +146,7 @@ const styles: Record<string, React.CSSProperties> = {
     color: 'var(--text-secondary)',
     borderRadius: '0.5rem',
     transition: 'background-color 0.2s',
+    textDecoration: 'none',
   },
   mobileNavLinkActive: {
     backgroundColor: 'var(--surface)',
